@@ -15,5 +15,8 @@ TARGET_SCREEN_DENSITY := 480
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
+## Inherit vendor blobs
+$(call inherit-product, vendor/huawei/prague/prague-vendor.mk)
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
