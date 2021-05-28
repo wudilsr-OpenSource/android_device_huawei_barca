@@ -18,5 +18,9 @@ TARGET_SCREEN_WIDTH := 1080
 ## Inherit vendor blobs
 $(call inherit-product, vendor/huawei/prague/prague-vendor.mk)
 
+# Init
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/init/CameraDaemon.rc:$(TARGET_COPY_OUT_ODM)/etc/init/CameraDaemon.rc
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
