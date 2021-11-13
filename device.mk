@@ -22,5 +22,8 @@ $(call inherit-product, vendor/huawei/prague/prague-vendor.mk)
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/init/CameraDaemon.rc:$(TARGET_COPY_OUT_ODM)/etc/init/CameraDaemon.rc
 
+# Overlay
+DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
