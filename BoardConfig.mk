@@ -1,21 +1,19 @@
 #
-# Copyright (C) 2022 The LineageOS Project
+# Copyright (C) 2023 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
-## Device Path
 DEVICE_PATH := device/huawei/prague
 
-## Include common BoardConfig
+# Inherit from hi6250-8-common
 include device/huawei/hi6250-8-common/BoardConfigCommon.mk
 
-# Partitions
-BOARD_BOOTIMAGE_PARTITION_SIZE := 25165824 # mmcblk0p30 (24576*1024)
-BOARD_CACHEIMAGE_PARTITION_SIZE := 134217728 # mmcblk0p42 (131072*1024)
-BOARD_ODMIMAGE_PARTITION_SIZE := 134217728 # mmcblk0p43 (131072*1024)
-BOARD_RAMDISKIMAGE_PARTITION_SIZE := 16777216 # mmcblk0p31 (16384*1024)
-BOARD_RECOVERYIMAGE_PARTITION_SIZE := 33554432 # mmcblk0p32 (32768*1024)
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2214592512 # mmcblk0p53 (2162688*1024)
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 10271850496 # mmcblk0p58 (10031104*1024)
-BOARD_VENDORIMAGE_PARTITION_SIZE := 822083584 # mmcblk0p56 (802816*1024)
+# Display
+TARGET_SCREEN_DENSITY := 460
+
+# Properties
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
+# Inherit the proprietary files
+include vendor/huawei/prague/BoardConfigVendor.mk

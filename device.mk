@@ -1,29 +1,26 @@
 #
-# Copyright (C) 2022 The LineageOS Project
+# Copyright (C) 2023 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
-## Device Path
-DEVICE_PATH := device/huawei/prague
+# Inherit from hi6250-8-common
+$(call inherit-product, device/huawei/hi6250-8-common/common.mk)
 
-## Inherit common device
-$(call inherit-product, device/huawei/hi6250-8-common/hi6250.mk)
-
-# Display
-TARGET_SCREEN_DENSITY := 480
+# Boot animation
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
-## Inherit vendor blobs
-$(call inherit-product, vendor/huawei/prague/prague-vendor.mk)
+# Shipping API level
+PRODUCT_SHIPPING_API_LEVEL := 24
 
-# Init
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/init/CameraDaemon.rc:$(TARGET_COPY_OUT_ODM)/etc/init/CameraDaemon.rc
-
-# Overlay
-DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay
 
 # Soong namespaces
-PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+
+# Call the proprietary setup
+$(call inherit-product, vendor/huawei/prague/prague-vendor.mk)

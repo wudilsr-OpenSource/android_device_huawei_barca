@@ -1,28 +1,24 @@
 #
-# Copyright (C) 2022 The LineageOS Project
+# Copyright (C) 2017-2021 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
-## Common
+# Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
 
-## Device
+# Inherit from prague device
 $(call inherit-product, device/huawei/prague/device.mk)
 
-## Enable updating of APEXes
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
-
-## LineageOS
+# Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Device identifier
-PRODUCT_NAME := lineage_prague
+# Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := prague
-PRODUCT_BRAND := huawei
-PRODUCT_MODEL := P8 Lite 2017
+PRODUCT_NAME := lineage_prague
+PRODUCT_BRAND := Huawei
+PRODUCT_MODEL := PRA-LX1
 PRODUCT_MANUFACTURER := Huawei
+
 PRODUCT_GMS_CLIENTID_BASE := android-huawei
