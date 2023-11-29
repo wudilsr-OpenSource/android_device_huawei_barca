@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from PRA-LX1-user 8.0.0 HUAWEIPRA-LX1 384(C432) release-keys
+# All unpinned blobs below are extracted from PRA-LX1-user 8.0.0 HUAWEIPRA-LX1 416(C185) release-keys
 
 # Audio configs
 odm/etc/audio/algorithm/algorithm_PRAGUE_normal.xml
@@ -19,17 +19,6 @@ odm/etc/audio/modem/modem_PRAGUE_telecomiot.xml
 odm/etc/audio/modem/modem_PRAGUE_unicomiot.xml
 odm/etc/audio/sws/sws_PRAGUE_normal.xml
 odm/etc/audio/sws/sws_config.txt
-
-# Camera configs
-odm/etc/camera/mmi7cm/prague_imx386e3_ofilm/mmi7cmConfig.xml
-odm/etc/camera/mmi7cm/prague_imx386e3_sunny/mmi7cmConfig.xml
-odm/etc/camera/mmi7cm/prague_imx486_ofilm/mmi7cmConfig.xml
-odm/etc/camera/mmi7cm/prague_imx486_sunny/mmi7cmConfig.xml
-odm/etc/camera/mmi7cm/prague_ov12870e3_liteon/mmi7cmConfig.xml
-odm/etc/camera/mmi7cm/prague_ov12a10_foxconn/mmi7cmConfig.xml
-odm/etc/camera/mmi7cm/prague_ov12a10_liteon/mmi7cmConfig.xml
-odm/etc/camera/mmi7cm/prague_ov12a10_sunny/mmi7cmConfig.xml
-odm/etc/camera/mmi7cm/device.config
 
 # Camera hwcam
 odm/lib64/hwcam/hwcam.hi6250.PRAGUE.p.HI843_OFILM.so
