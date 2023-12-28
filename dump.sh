@@ -21,7 +21,8 @@ sleep 5
 sudo ./extract-files.sh prague ./dump/ > dump.log
 
 echo "Reset owner"
-sudo chown -R iceows:iceows ./../../../vendor/huawei/hi6250-8-common/*
+sudo chown -R $(id -u):$(id -g) ./../../../vendor/huawei/hi6250-8-common/*
+sudo chown -R $(id -u):$(id -g) ./../../../vendor/huawei/prague/*
 
 echo "Umount all"
 sleep 5
