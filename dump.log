@@ -1,5 +1,5 @@
 Cleaning output directory (./../../huawei/hi6250-8-common/../../../vendor/huawei/hi6250-8-common/proprietary)..
-Extracting 2364 files in ./../../huawei/hi6250-8-common/proprietary-files.txt from ./dump/:
+Extracting 2362 files in ./../../huawei/hi6250-8-common/proprietary-files.txt from ./dump/:
   - odm/etc/camera/dcvalidation.xml
     + Fixed up odm/etc/camera/dcvalidation.xml
   - odm/etc/camera/facedetection/config.xml
@@ -329,11 +329,11 @@ Extracting 2364 files in ./../../huawei/hi6250-8-common/proprietary-files.txt fr
   - odm/etc/ncfg/feature_index.xml
   - odm/lib64/libarcsoft_beautyshot.so
   - vendor/bin/hw/android.hardware.drm@1.0-service.widevine
-    !! vendor/bin/hw/android.hardware.drm@1.0-service.widevine: file not found in source
+    + Fixed up vendor/bin/hw/android.hardware.drm@1.0-service.widevine
   - vendor/etc/init/android.hardware.drm@1.0-service.widevine.rc
     + Fixed up vendor/etc/init/android.hardware.drm@1.0-service.widevine.rc
   - vendor/lib/libwvhidl.so
-    !! vendor/lib/libwvhidl.so: file not found in source
+    + Fixed up vendor/lib/libwvhidl.so
   - system/priv-app/HwIms/lib/arm64/libHME-Video.so
   - system/priv-app/HwIms/lib/arm64/libVT80.so
   - system/priv-app/HwIms/lib/arm64/libcryptotsc.so
@@ -2121,8 +2121,8 @@ Extracting 2364 files in ./../../huawei/hi6250-8-common/proprietary-files.txt fr
   - vendor/lib/displayeffect.hi6250.so
   - vendor/lib/egl/libGLES_mali.so
     + Fixed up vendor/lib/egl/libGLES_mali.so
-  - vendor/lib/hw/audio.primary.hi6250.so
-    + Fixed up vendor/lib/hw/audio.primary.hi6250.so
+  - vendor/lib/hw/android.hardware.keymaster@3.0-impl-hisi.so
+  - vendor/lib/hw/audio.primary_hisi.hi6250.so
   - vendor/lib/hw/facerecognize.hi6250.so
   - vendor/lib/hw/fingerprint.hi6250.so
   - vendor/lib/hw/fm.bcm.hi6250.so
@@ -2176,7 +2176,6 @@ Extracting 2364 files in ./../../huawei/hi6250-8-common/proprietary-files.txt fr
   - vendor/lib/libhw_display_factory.so
   - vendor/lib/libhw_display_test.so
   - vendor/lib/libiawareperf_client.so
-  - vendor/lib/libimonitor.so
   - vendor/lib/libjpeghdrenc.so
   - vendor/lib/libjtag_wdt_ctrl.so
   - vendor/lib/libmax98925.so
@@ -2236,8 +2235,8 @@ Extracting 2364 files in ./../../huawei/hi6250-8-common/proprietary-files.txt fr
     + Fixed up vendor/lib64/egl/libGLES_mali.so
   - vendor/lib64/hw/CameraFactoryService.so
   - vendor/lib64/hw/activity_recognition.default.so
-  - vendor/lib64/hw/audio.primary.hi6250.so
-    + Fixed up vendor/lib64/hw/audio.primary.hi6250.so
+  - vendor/lib64/hw/android.hardware.keymaster@3.0-impl-hisi.so
+  - vendor/lib64/hw/audio.primary_hisi.hi6250.so
   - vendor/lib64/hw/camera.hi6250.so
     + Fixed up vendor/lib64/hw/camera.hi6250.so
   - vendor/lib64/hw/facerecognize.hi6250.so
@@ -2320,7 +2319,6 @@ Extracting 2364 files in ./../../huawei/hi6250-8-common/proprietary-files.txt fr
   - vendor/lib64/libcamera_ivp.so
   - vendor/lib64/libcamera_omron.so
   - vendor/lib64/libcamerabuffer.so
-  - vendor/lib64/libchrlog.so
   - vendor/lib64/libcommunication_api.so
   - vendor/lib64/libconn_factory_test.so
   - vendor/lib64/libcontrastCal.so
@@ -2354,11 +2352,8 @@ Extracting 2364 files in ./../../huawei/hi6250-8-common/proprietary-files.txt fr
   - vendor/lib64/libhw_display_factory.so
   - vendor/lib64/libhw_display_test.so
   - vendor/lib64/libhwgpschannelclient.so
-  - vendor/lib64/libhwlog.so
-    + Fixed up vendor/lib64/libhwlog.so
   - vendor/lib64/libiawareperf_client.so
   - vendor/lib64/libimedia_filters.so
-  - vendor/lib64/libimonitor.so
   - vendor/lib64/libispenhnc.so
   - vendor/lib64/libjpeghdrenc.so
   - vendor/lib64/libjtag_wdt_ctrl.so
