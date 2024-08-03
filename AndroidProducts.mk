@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_prague.mk
+    $(LOCAL_DIR)/lineage_barca.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_prague-user \
-    lineage_prague-userdebug \
-    lineage_prague-eng
+    lineage_barca-user \
+    lineage_barca-userdebug \
+    lineage_barca-eng

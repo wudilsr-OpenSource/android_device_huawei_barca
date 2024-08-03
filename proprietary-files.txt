@@ -1,56 +1,55 @@
-# All unpinned blobs below are extracted from PRA-LX1-user 8.0.0 HUAWEIPRA-LX1 416(C185) release-keys
-
-# Audio configs
-odm/etc/audio/algorithm/algorithm_PRAGUE_normal.xml
-odm/etc/audio/dts/dts_PRAGUE_normal.xml
-odm/etc/audio/hissc/mixer_paths_PRAGUE.xml
-odm/etc/audio/hissc/mixer_volumes_PRAGUE_ce.xml
-odm/etc/audio/hissc/mixer_volumes_PRAGUE_cmcciot.xml
-odm/etc/audio/hissc/mixer_volumes_PRAGUE_gcf.xml
-odm/etc/audio/hissc/mixer_volumes_PRAGUE_normal.xml
-odm/etc/audio/hissc/mixer_volumes_PRAGUE_telecomiot.xml
-odm/etc/audio/hissc/mixer_volumes_PRAGUE_unicomiot.xml
-odm/etc/audio/hissc/pop_seq_PRAGUE.xml
-odm/etc/audio/mbdrc/mbdrc_PRAGUE_normal.xml
-odm/etc/audio/modem/modem_PRAGUE_cmcciot.xml
-odm/etc/audio/modem/modem_PRAGUE_gcf.xml
-odm/etc/audio/modem/modem_PRAGUE_normal.xml
-odm/etc/audio/modem/modem_PRAGUE_telecomiot.xml
-odm/etc/audio/modem/modem_PRAGUE_unicomiot.xml
-odm/etc/audio/sws/sws_PRAGUE_normal.xml
+# Audio
+odm/etc/audio/algorithm/algorithm_barca_normal.xml
+odm/etc/audio/dts/dts_barca_normal.xml
+odm/etc/audio/hissc/mixer_paths_barca.xml
+odm/etc/audio/hissc/mixer_volumes_barca_ce.xml
+odm/etc/audio/hissc/mixer_volumes_barca_cmcciot.xml
+odm/etc/audio/hissc/mixer_volumes_barca_gcf.xml
+odm/etc/audio/hissc/mixer_volumes_barca_normal.xml
+odm/etc/audio/hissc/mixer_volumes_barca_unicomiot.xml
+odm/etc/audio/hissc/pop_seq_barca.xml
+odm/etc/audio/mbdrc/mbdrc_barca_normal.xml
+odm/etc/audio/modem/modem_barca_cmcciot.xml
+odm/etc/audio/modem/modem_barca_gcf.xml
+odm/etc/audio/modem/modem_barca_normal.xml
+odm/etc/audio/modem/modem_barca_unicomiot.xml
+odm/etc/audio/sws/sws_3d_barca_normal.cfg
+odm/etc/audio/sws/sws_barca_normal.xml
 odm/etc/audio/sws/sws_config.txt
+odm/etc/audio/sws/sws_default.xml
+odm/etc/audio/sws/sws_lp_config_1.bin
+odm/etc/audio/sws/sws_lp_config_2.bin
+odm/etc/audio/sws/tws_config.bin
+odm/etc/audio/sws/x2b_config_f.bin
+odm/etc/audio/sws/x2b_config_w.bin
+odm/etc/audio/ti/ti_barca_AAC_normal.xml
+odm/etc/audio/ti/ti_barca_GD_normal.xml
+odm/etc/audio/ti/ti_barca_GK_normal.xml
+odm/etc/audio/ti/ti_default.xml
+odm/etc/audio/tracklogconfig/codectracklog.config
+odm/etc/audio/tracklogconfig/soctracklog.config
 
-# Camera hwcam
-odm/lib64/hwcam/hwcam.hi6250.PRAGUE.p.HI843_OFILM.so
-odm/lib64/hwcam/hwcam.hi6250.PRAGUE.p.IMX219_LITEON.so
-odm/lib64/hwcam/hwcam.hi6250.PRAGUE.p.IMX219_SUNNY.so
-odm/lib64/hwcam/hwcam.hi6250.PRAGUE.p.IMX386E3_OFILM.so
-odm/lib64/hwcam/hwcam.hi6250.PRAGUE.p.IMX386E3_SUNNY.so
-odm/lib64/hwcam/hwcam.hi6250.PRAGUE.p.IMX486_OFILM.so
-odm/lib64/hwcam/hwcam.hi6250.PRAGUE.p.IMX486_SUNNY.so
-odm/lib64/hwcam/hwcam.hi6250.PRAGUE.p.OV12870E3_LITEON.so
-odm/lib64/hwcam/hwcam.hi6250.PRAGUE.p.OV12A10_FOXCONN.so
-odm/lib64/hwcam/hwcam.hi6250.PRAGUE.p.OV12A10_LITEON.so
-odm/lib64/hwcam/hwcam.hi6250.PRAGUE.p.OV12A10_SUNNY.so
-odm/lib64/hwcam/hwcam.hi6250.PRAGUE.p.OV8856_SUNNY.so
-odm/lib64/hwcam/hwcam.hi6250.PRAGUE.s.HI843_OFILM.so
-odm/lib64/hwcam/hwcam.hi6250.PRAGUE.s.IMX219_LITEON.so
-odm/lib64/hwcam/hwcam.hi6250.PRAGUE.s.IMX219_SUNNY.so
-odm/lib64/hwcam/hwcam.hi6250.PRAGUE.s.IMX386E3_OFILM.so
-odm/lib64/hwcam/hwcam.hi6250.PRAGUE.s.IMX386E3_SUNNY.so
-odm/lib64/hwcam/hwcam.hi6250.PRAGUE.s.IMX486_OFILM.so
-odm/lib64/hwcam/hwcam.hi6250.PRAGUE.s.IMX486_SUNNY.so
-odm/lib64/hwcam/hwcam.hi6250.PRAGUE.s.OV12870E3_LITEON.so
-odm/lib64/hwcam/hwcam.hi6250.PRAGUE.s.OV12A10_FOXCONN.so
-odm/lib64/hwcam/hwcam.hi6250.PRAGUE.s.OV12A10_LITEON.so
-odm/lib64/hwcam/hwcam.hi6250.PRAGUE.s.OV12A10_SUNNY.so
-odm/lib64/hwcam/hwcam.hi6250.PRAGUE.s.OV8856_SUNNY.so
-odm/lib64/hwcam/hwcam.hi6250.m.PRAGUE.so
+# Camera HALs
+-odm/lib64/hwcam/hwcam.hi6250.BARCA.p.IMX376.so
+-odm/lib64/hwcam/hwcam.hi6250.BARCA.p.IMX486HYBIRD.so
+-odm/lib64/hwcam/hwcam.hi6250.BARCA.p.OV12A10HYBIRD.so
+-odm/lib64/hwcam/hwcam.hi6250.BARCA.p.OV20880.so
+-odm/lib64/hwcam/hwcam.hi6250.BARCA.s.IMX376.so
+-odm/lib64/hwcam/hwcam.hi6250.BARCA.s.IMX486HYBIRD.so
+-odm/lib64/hwcam/hwcam.hi6250.BARCA.s.OV12A10HYBIRD.so
+-odm/lib64/hwcam/hwcam.hi6250.BARCA.s.OV20880.so
+-odm/lib64/hwcam/hwcam.hi6250.m.BARCA.so
 
-# NFC
-product/etc/nfc/libnfc_brcm_pra_L31.conf:vendor/etc/libnfc-brcm.conf
-product/etc/nfc/libnfc_nxp_pra_L31.conf:vendor/etc/libnfc-nxp.conf
-vendor/firmware/libpn551_fw_10_05_03_64bits.so:vendor/lib64/libpn551_fw.so
+# Device
+vendor/etc/cfg_bac_al00_hisi.ini
+vendor/etc/cfg_bac_lx1_hisi.ini
+vendor/etc/cfg_bac_lx3_hisi.ini
 
-# Touchscreen firmware
-odm/etc/firmware/ts/prague_CYTT21403_default.bin:odm/firmware/ts/prague_CYTT21403_default.bin
+# Firmware
+odm/etc/firmware/ts/barca-v8r5_focal_pram_8716.img
+odm/etc/firmware/ts/barca-v8r5_fts_baca30140_ctc.img
+odm/etc/firmware/ts/barca-v8r5_novatek_BACA40170_auo.bin
+odm/etc/firmware/ts/barca-v8r5_synaptics_BACA281100_tianma_raw.csv
+odm/etc/firmware/ts/barca-v8r5_synaptics_BACA28110_tianma.img
+odm/etc/firmware/ts/barca-v8r5_synaptics_BACA281300_boe_raw.csv
+odm/etc/firmware/ts/barca-v8r5_synaptics_BACA28130_boe.img

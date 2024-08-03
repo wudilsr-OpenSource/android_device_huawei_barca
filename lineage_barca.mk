@@ -9,16 +9,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from prague device
-$(call inherit-product, device/huawei/prague/device.mk)
+$(call inherit-product, device/huawei/barca/device.mk)
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := prague
-PRODUCT_NAME := lineage_prague
+PRODUCT_DEVICE := barca
+PRODUCT_NAME := lineage_barca
 PRODUCT_BRAND := Huawei
-PRODUCT_MODEL := PRA-LX1
+PRODUCT_MODEL := Nova 2 Plus
 PRODUCT_MANUFACTURER := Huawei
 
 PRODUCT_GMS_CLIENTID_BASE := android-huawei
