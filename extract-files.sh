@@ -8,6 +8,11 @@
 
 function blob_fixup() {
     case "${1}" in
+        odm/etc/camera/*)
+            sed -i 's/gb2312/iso-8859-1/g' "${2}"
+            sed -i 's/GB2312/iso-8859-1/g' "${2}"
+            sed -i 's/xmlversion/xml version/g' "${2}"
+            ;;
         odm/lib64/hwcam/hwcam.hi6250.m.BARCA.so)
             "${PATCHELF}" --add-needed "libtinyxml2_shim.so" "${2}"
             ;;
