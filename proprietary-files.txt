@@ -29,6 +29,27 @@ odm/etc/audio/ti/ti_default.xml
 odm/etc/audio/tracklogconfig/codectracklog.config
 odm/etc/audio/tracklogconfig/soctracklog.config
 
+# Camera Configs
+odm/etc/camera/facedetection/config.xml
+odm/etc/camera/ispenhnc/ispenhncalgoconfig.xml
+odm/etc/camera/mmi/config.xml
+odm/etc/camera/smartae/imx376/SmartAE.xml
+odm/etc/camera/smartae/imx486/SmartAE.xml
+odm/etc/camera/smartae/ov12a10/SmartAE.xml
+odm/etc/camera/smartae/ov20880/SmartAE.xml
+odm/etc/camera/smartae/device.config
+odm/etc/camera/tornado/imx376/TornadoI.ini
+odm/etc/camera/tornado/imx486/TornadoI.ini
+odm/etc/camera/tornado/ov12a10/TornadoI.ini
+odm/etc/camera/tornado/ov20880/TornadoI.ini
+odm/etc/camera/tornado/device.config
+odm/etc/camera/videostabilization/config.xml
+odm/etc/camera/dcvalidation.xml
+odm/etc/camera/ippalgoconfig.xml
+odm/etc/camera/mempoolcfg.xml
+odm/etc/camera/pdafvalidation.xml
+odm/etc/camera/ppconfig.xml
+
 # Camera HALs
 -odm/lib64/hwcam/hwcam.hi6250.BARCA.p.IMX376.so
 -odm/lib64/hwcam/hwcam.hi6250.BARCA.p.IMX486HYBIRD.so
